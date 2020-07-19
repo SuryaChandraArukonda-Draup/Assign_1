@@ -1,9 +1,9 @@
-from Project.Assign_1.Query import Query
-from Project.Assign_1.Search import Search
-from Project.Assign_1.Details import Details
-from Project.Assign_1.ToDelete import ToDelete
-from Project.Assign_1.Check import Check
-from Project.Assign_1.Edit import Edit
+from Query.Query import Query
+from Search.Search import Search
+from Details.Details import Details
+from Delete.ToDelete import ToDelete
+from check.Check import Check
+from Edit.Edit import Edit
 
 if __name__ == "__main__":
     option = True

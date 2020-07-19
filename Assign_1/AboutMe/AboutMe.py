@@ -1,5 +1,5 @@
-from Project.Assign_1.Edit_Data import EditData
-from Project.Assign_1.Delete import Delete
+from Edit.Edit import EditData
+from Delete.Delete import Delete
 
 
 class AboutMe(EditData, Delete):

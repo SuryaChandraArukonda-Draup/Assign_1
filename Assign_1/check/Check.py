@@ -5,7 +5,7 @@ class Check:
     def check():
         uid = input('Enter your unique id:')
         found = False
-        with open('sample.json') as file:
+        with open('../sample.json') as file:
             for obj in file:
                 data = json.loads(obj)
                 if uid in data.values():

@@ -1,15 +1,14 @@
 import json
-from Project.Assign_1.AboutMe import AboutMe
+from Details.Details import Details
+from AboutMe.AboutMe import AboutMe
 
 
-class Edit(AboutMe):
-    def edit():
-        # This variable is used to keep track whether data is available in database
+class ToDelete(Details, AboutMe):
+    def todelete():
         found = False
-        uid = input('Please enter your unique identification number:')
-        # This list is used to hold the data temporarily for editing
+        uid = input('Please enter your unique id:')
         datalist = []
-        with open('sample.json') as file:
+        with open('../sample.json') as file:
             for obj in file:
                 data = json.loads(obj)
                 if uid in data.values():
@@ -20,15 +19,12 @@ class Edit(AboutMe):
                                    data['description'])
                 else:
                     datalist.append(data)
-
         if found:
-            objt.edit_data()
+            objt.delete()
             data = objt.__dict__
             datalist.append(data)
-            with open('sample.json', 'w') as file:
+            with open('../sample.json', 'w') as file:
                 for data in datalist:
                     json.dump(data, file)
                     file.write('\n')
 
-        else:
-            print('Unique identification number is not found')

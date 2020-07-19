@@ -4,7 +4,7 @@ import json
 class Search:
     def search():
         var = False
-        with open('sample.json') as file:
+        with open('../sample.json') as file:
             userval = input('Enter the term for search: ')
             for obj in file:
                 found = False

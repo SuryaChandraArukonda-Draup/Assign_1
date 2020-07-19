@@ -1,7 +1,7 @@
 import random
 import string
 import json
-from Project.Assign_1.AboutMe import AboutMe
+from AboutMe.AboutMe import AboutMe
 
 
 class Details(AboutMe):
@@ -25,6 +25,6 @@ class Details(AboutMe):
         print(f'Your unique identification number is: {uid}')
         print('Please save this id for future reference.')
 
-        with open('sample.json', 'a') as file:
+        with open('../sample.json', 'a') as file:
             json.dump(data, file)
             file.write('\n')
