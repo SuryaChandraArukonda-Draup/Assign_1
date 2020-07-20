@@ -2,7 +2,7 @@ from Query.Query import Query
 from Search.Search import Search
 from Details.Details import Details
 from Delete.ToDelete import ToDelete
-from check.Check import Check
+from Check.Check import Check
 from Edit.Edit import Edit
 
 if __name__ == "__main__":
